@@ -5,6 +5,7 @@
     --background: #FF5400;
     --text-color-1: #131318;
     --text-color-2: #424247;
+    --p-color: rgba(19, 19, 24, 0.70);
 }
 /* UNIVERSAL CSS  */
 
@@ -50,6 +51,35 @@
     align-items: center;
 }
 
+.section-gap{
+    margin: 6.25rem 0;
+}
+.heading-text{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-color-1);
+    padding-bottom: 1.5rem;
+}
+
+.p{
+    color: var(--p-color);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+
+.pb{
+    padding-bottom: 1.5rem;
+}
+.pt{
+    padding-top: 1.5rem;
+}
+.mt{
+    margin-top: 1.5rem;
+}
+.mb{
+    margin-bottom: 1.5rem;
+}
 /* HEADER SECTION  */
 
 header{
@@ -138,3 +168,141 @@ form input:focus, select:focus{
 svg {
     padding: 0.5rem 0.25rem 0 0;
 }
+
+
+
+
+
+ /* SECTION OUR POP TOUR  */
+
+.content{
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+}
+.text ul{
+    margin-left: 2rem;
+ }
+
+
+ /* DESTINATION SECTION  */
+
+ #destination p{
+    width: 42rem;
+    margin: 0 auto;
+ }
+
+ /* .img-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem; 
+    height: 100%;
+ }
+
+ 
+ .maldives{
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+ }
+ .indonesia{
+    grid-row: 1 / 2;
+    grid-column: 7 / 13;
+ }
+ .srilanka{
+    grid-row-start: 2;
+    grid-column-start: 1;
+
+    grid-row-end: 3;
+    grid-column-end: 4;
+ }
+ .north-america{
+    grid-row-start: 2;
+   grid-column-start: 4;
+
+   grid-row-end: 3;
+   grid-column-end: 10;
+ }
+ .kashmir{
+    background-color: #6BDA88; 
+   grid-row-start: 2;
+   grid-column-start: 10;
+
+   grid-row-end: 3;
+   grid-column-end: 13;
+ } */
+ .grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+ }
+ .maldives{
+    grid-column: 1 / 2;
+ }
+ .indonesia{
+    grid-column: 2 / 3;
+ }
+ .grid2{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 1rem;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER SECTION  */
+
+ footer{
+    background: rgba(19, 19, 24, 0.05);
+    height: 100%;
+ }
+ .pt7{
+    padding-top: 7rem;
+ }
+ footer p{
+    width: 48.0625rem;
+    margin: 0 auto;
+ }
+ hr{
+    width: 54.5rem;
+    margin: 1.5rem auto;
+ }
+ .icons{
+    margin-top: 3rem;
+ }
+ .icons ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+ }
+
+ .icons li{
+    list-style-type: none;
+ }
+ .icons a{
+    text-decoration: none;
+ }
+ .bottom{
+    padding-bottom: 7rem;
+ }
+ .top{
+    padding-top: 3rem;
+ }
