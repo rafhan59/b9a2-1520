@@ -7,6 +7,12 @@
     --text-color-2: #424247;
     --p-color: rgba(19, 19, 24, 0.70);
 }
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
 /* UNIVERSAL CSS  */
 
 *{
@@ -245,10 +251,34 @@ svg {
     width: 100%;
     height: 100%;
 }
+.app{
+    background: var(--background);
+}
+.app-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.app-flex h1, .app-flex p{
+    padding: 1rem 0;
+    color: #FFF;
+}
+.store{
+    padding-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
 
  .img-grid h2{
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -261,6 +291,9 @@ svg {
     display: grid;
     grid-template-columns: 1fr 1fr ; 
     gap: 1.5rem;
+}
+.card-content h2{
+    padding: 1rem 0;
 }
 .guarantee {
     grid-column: 1 / -1;
@@ -302,8 +335,15 @@ svg {
     font-weight: 700;
     line-height: 2.25rem;
 }
-
-
+.deal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.deal button{
+    width: 25%;
+    margin: 0 auto;
+}
 .newsletter-section{
     display: flex;
     justify-content: stretch;
@@ -313,25 +353,73 @@ svg {
 .newsletter-text{
     border: 1px solid var(--background);
     border-radius: 1rem;
-    padding: 4.375rem 0 3rem 1.5rem;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
 }
-.newsletter-text .content{
+.newsletter-text h3{
+    color: var(--text-color-1);
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 1.5rem;
+}
 
+.newsletter-text p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+.newsletter-text hr{
+    width: calc(100% - 1rem);
+}
+.newsletter-text form{
+    padding: 0;
+}
+
+.newsletter-text form input{
+    /* border: 1px solid #000; */
+    display: block;
+    background: rgba(19, 19, 24, 0.05);;
+    width: calc(100% - 1rem);
+    height: 3rem;
+    margin: 0 0 1rem;
+}
+
+
+.newsletter-img{
+    position: relative;
+}
+.newsletter-img .news-text{
+    position: absolute;
+    right: 1%;
+    bottom: 11%;
+    transform: rotate(-19.628deg);
+    background: var(--background);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.news-text h3{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 
 
-
-
-
+.news-text h1{
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
 
 
 
 /* FOOTER SECTION  */
 
  footer{
+    margin-top: 5rem;
     background: rgba(19, 19, 24, 0.05);
-    height: 100%;
+    /* height: ; */
  }
  .pt7{
     padding-top: 7rem;
@@ -367,3 +455,202 @@ svg {
     padding-top: 3rem;
  }
 
+
+
+
+
+
+
+
+
+    /* MOBILE RESPONSIVE  */
+
+    @media (width <= 600px) {
+
+        .container{
+            max-width: 81.25%;
+            margin: 0 auto;
+        }
+
+        .btn-primary{
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+
+        .hamburger{
+            display: inline;
+        }
+        .menu{
+            display: none;
+        }
+        .input-field form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            
+        }
+        .input-field{
+            max-width: 75%;
+            margin: 0 auto;
+            border-radius: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+
+        .input-field form input, .input-field form select, .input-field form button{
+            /* max-width: 80%; */
+            padding-right: 1rem;
+            margin-right: 0;
+        }
+        .input-field button{
+            text-align: center;
+            padding-left: 1rem;
+        }
+
+        .banner-text h1{
+            font-size: 22px;
+            font-weight: 800;
+        }
+        .banner-text p{
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.3125rem;
+            padding: 0.5rem 1rem;
+            width: 80%;
+        }
+
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .content .heading-text{
+            font-size: 1.25rem;
+            font-weight: 800;
+        }
+        .content p, .content ul li{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+
+
+        .image img{
+            width: 100%;
+            height: auto;
+        }
+
+        .img-grid{
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 0;
+            /* margin-bottom: 1rem; */
+        }
+        .maldives, .indonesia, .srilanka, .north-america, .kashmir, .bangladesh, .banderban{
+            grid-column: 1 / -1;
+        }
+
+
+        .container .heading-text{
+            font-size: 20px;
+            font-weight: 800;
+            padding-bottom: 1rem;
+        }
+        .container p{
+            margin-bottom: 1rem;
+        }
+
+        .p-width, .p, .deal p{
+            font-size: 0.875rem;
+        }
+        .deal p{
+            width: 100%;
+        }
+        .deal button{
+            display: none;
+        }
+        .bottom-gap{
+            margin-bottom: 1rem;
+        }
+
+        .section-gap{
+            margin-bottom: 1.5rem;
+        }
+        .section-gap-top{
+            margin-top: 1.5rem;
+        }
+
+        .cards{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .card-3{
+            width: 100%;
+        }
+        .card-1, .card-2, .card-3{
+            grid-column: 1 / -1;
+        }
+
+        .cards h2, .heading, .heading-text{
+            font-size: 1.25rem;
+        }
+        .cards p, .p, .p-width{
+            font-size: 0.875rem;
+        }
+        .text p{
+            margin: 0;
+            width: 100%;
+        }
+        .store, .newsletter-section{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .image .text-center{
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        .image h2{
+            width: 276px;
+        }
+
+        .newsletter-img img{
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .news-text{
+            position: absolute;
+            right: 2%;
+            bottom: 14%;
+            z-index: 10;
+        }
+        .news-text h3{
+            font-size: 0.875rem;
+        }
+        .news-text h1{
+            font-size: 1rem;
+        }
+
+        
+        .pt{
+            width: 80%;
+        }
+        .icons{
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+        }
+        .last{
+            margin-top: 3rem;
+        }
+        .top{
+            text-align: center;
+            width: 100%;
+        }
+    }
