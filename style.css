@@ -304,8 +304,20 @@ svg {
 }
 
 
+.newsletter-section{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    gap: 1.5rem;
+}
+.newsletter-text{
+    border: 1px solid var(--background);
+    border-radius: 1rem;
+    padding: 4.375rem 0 3rem 1.5rem;
+}
+.newsletter-text .content{
 
-
+}
 
 
 
