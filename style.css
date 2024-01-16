@@ -152,6 +152,7 @@ nav{
     background-image: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.8)),url("./Images/Group\ 13\ \(1\)\ \(1\).png");
     border-radius: 1rem;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-text h1{
     padding-top: 6.5rem;
