@@ -243,18 +243,44 @@ svg {
     grid-column: 2 / 3;
  }
  .grid2{
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    gap: 1rem;
+    gap: 1rem; */
+    display: flex;
+    flex-direction: row;
  }
+/* .srilanka{
+    grid-column: 1 / 2;
+}
+.north-america{
+    grid-column: 2 / 3;
+}
+.kashmir{
+    grid-column: 3 / 4;
+} */
 
 
 
 
-
-
-
-
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr ; 
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+}
+.guarantee {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+.card-content{
+    padding: 2rem;
+}
+.card{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
 
 
 
