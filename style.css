@@ -8,6 +8,10 @@
     --p-color: rgba(19, 19, 24, 0.70);
 }
 
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 .hamburger{
     display: none;
@@ -22,6 +26,7 @@
     font-family: 'Mulish', sans-serif;
     font-style: normal;
     line-height: normal;
+    
 }
 
 .container{
@@ -171,6 +176,7 @@ nav{
 .input-field{
     margin: 3rem 0rem 6.5rem;
     background: rgba(255, 255, 255, 0.30);
+    border-radius: 0.5rem;
 }
 form{
     padding: 1rem;
@@ -230,6 +236,10 @@ svg {
  .srilanka{
     grid-column: 1 / 4;
 
+ }
+ .srilanka img{
+    object-fit: cover;
+    border-radius: 1rem;
  }
  .north-america{
     grid-column: 4 / 10;
@@ -294,8 +304,20 @@ svg {
     grid-template-columns: 1fr 1fr ; 
     gap: 1.5rem;
 }
+.card-1{
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background:rgba(251, 181, 99, 0.05);
+}
+.card-2{
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05)
+}
 .card-content h2{
     padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 .guarantee {
     grid-column: 1 / -1;
@@ -305,11 +327,7 @@ svg {
 .card-content{
     padding: 2rem;
 }
-.card-1, .card-2{
-    border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.20);
-    background: rgba(251, 181, 99, 0.05);
-}
+
 .card-3{
     grid-column: 1/-1 ;
     width: 70%;
@@ -372,6 +390,7 @@ svg {
 }
 .newsletter-text hr{
     width: calc(100% - 1rem);
+    margin-top: 0;
 }
 .newsletter-text form{
     padding: 0;
@@ -460,6 +479,7 @@ svg {
  }
 .app{
     position: relative;
+    overflow: hidden;
 }
 .aeroplane{
     position: absolute;
@@ -650,16 +670,18 @@ svg {
         .image h2{
             width: 276px;
         }
-
+        .newsletter-img{
+            position: relative;
+        }
         .newsletter-img img{
             position: relative;
             width: 100%;
             height: auto;
         }
-        .news-text{
+        .newsletter-img .news-text{
             position: absolute;
             right: 2%;
-            bottom: 14%;
+            bottom: 13%;
             z-index: 10;
         }
         .news-text h3{
